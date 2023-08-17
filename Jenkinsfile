@@ -16,7 +16,7 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                sh 'sudo docker run -p 9000:9000 -d abalone'
+                sh 'sudo docker run -p 8000:8000 -d abalone'
             }
         }
     }   
