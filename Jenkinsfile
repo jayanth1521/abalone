@@ -10,13 +10,13 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'sudo docker build -t abalone-age-prediction .'
+                sh 'sudo docker build -t abalone' .
             }
         }
         
         stage('Deploy') {
             steps {
-                sh 'sudo docker run -p 9000:9000 -d abalone-age-prediction'
+                sh 'sudo docker run -p 9000:9000 -d abalone'
             }
         }
     }   
