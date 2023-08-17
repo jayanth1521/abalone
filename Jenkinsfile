@@ -10,7 +10,7 @@ pipeline {
         
         stage('Build') {
             steps {
-                sh 'sudo docker build -t abalone' .
+                sh 'sudo docker build -t abalone .' 
             }
         }
         
